@@ -1,6 +1,5 @@
 let clearBtn = document.getElementById('clearAllFollow');
 
-
 clearBtn.onclick = function (element) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     chrome.scripting.executeScript({
@@ -19,5 +18,4 @@ function clearAll() {
   } else {
     alert('请在微博管理关注页面使用');
   }
-
 }
