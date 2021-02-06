@@ -10,7 +10,7 @@ clearBtn.onclick = function (element) {
 };
 
 function clearAll() {
-  if (/weibo.com[\w\d]*follow/.test(window.location.host)) {
+  if (/weibo.com[\w\d]*follow/.test(window.location.href)) {
     document.querySelector(".btn_link.S_txt1").click();
     document.querySelectorAll('.member_li').forEach(l => l.click());
     document.querySelector('.W_btn_a[node-type="cancelFollowBtn"]').click();
